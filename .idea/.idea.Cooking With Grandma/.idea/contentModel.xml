@@ -8,25 +8,27 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="HolyShift" t="Include">
-          <e p="Shaders" t="Include">
-            <e p="FXWaterLowpoly.shader" t="Include" />
-            <e p="WaterInclude.cginc" t="Include" />
-          </e>
-        </e>
-        <e p="Polygonal Foliage Asset Package" t="Include">
-          <e p="Shaders" t="Include">
-            <e p="Cloud.shader" t="Include" />
-            <e p="Diffuse.shader" t="Include" />
-          </e>
-        </e>
-        <e p="Samples" t="Include">
-          <e p="Terrain Tools" t="Include">
-            <e p="0.1.0-preview" t="Include">
-              <e p="Terrain Assets" t="Include">
-                <e p="ThirdPartyNotices.txt" t="Include" />
-              </e>
+        <e p="Decoration And Characters Packs" t="Include">
+          <e p="HolyShift" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="FXWaterLowpoly.shader" t="Include" />
+              <e p="WaterInclude.cginc" t="Include" />
             </e>
+          </e>
+          <e p="Polygonal Foliage Asset Package" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="Cloud.shader" t="Include" />
+              <e p="Diffuse.shader" t="Include" />
+            </e>
+          </e>
+          <e p="SimpleLowPolyNature" t="Include">
+            <e p="ReadMe.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="SimpleWater.shader" t="Include" />
+            </e>
+          </e>
+          <e p="SimpleSky" t="Include">
+            <e p="ReadMe.txt" t="Include" />
           </e>
         </e>
         <e p="SampleScenes" t="Include">
@@ -54,15 +56,6 @@
           <e p="Raycast.cs" t="Include" />
           <e p="WalkingNpc.cs" t="Include" />
           <e p="WalkingNpcMovement.cs" t="Include" />
-        </e>
-        <e p="SimpleLowPolyNature" t="Include">
-          <e p="ReadMe.txt" t="Include" />
-          <e p="Shaders" t="Include">
-            <e p="SimpleWater.shader" t="Include" />
-          </e>
-        </e>
-        <e p="SimpleSky" t="Include">
-          <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
@@ -300,6 +293,13 @@
                 <e p="ReflectiveDiffuseSpec.shader" t="Include" />
                 <e p="ReflectiveDiffuseSpecTransp.shader" t="Include" />
               </e>
+            </e>
+          </e>
+        </e>
+        <e p="Terrain Tools" t="Include">
+          <e p="0.1.0-preview" t="Include">
+            <e p="Terrain Assets" t="Include">
+              <e p="ThirdPartyNotices.txt" t="Include" />
             </e>
           </e>
         </e>

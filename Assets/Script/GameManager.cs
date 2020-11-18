@@ -47,12 +47,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Function inventory called when the user press i
-    public void Inventory()
-    {
-        
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -71,10 +65,10 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                eggCounterTxt.text = "egg " + egg;
+                eggCounterTxt.text = "Eggs " + egg;
                 milkCounterTxt.text = "Milk " + milk;
                 flowersCounterTxt.text = "Flowers " + flowers;
-                mushroomCounterTxt.text = "Mushroom " + mushroom;
+                mushroomCounterTxt.text = "Mushrooms " + mushroom;
                 inventory.SetActive(true);
                 inventoryTruth = true;
             }

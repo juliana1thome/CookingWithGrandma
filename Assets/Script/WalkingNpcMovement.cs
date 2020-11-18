@@ -11,12 +11,14 @@ public class WalkingNpcMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();// Cache
+        agent.destination = destination.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(destination.transform.position);
+        //agent.SetDestination(destination.transform.position);
+        agent.destination = destination.transform.position;
     }
 }

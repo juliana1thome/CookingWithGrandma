@@ -78,6 +78,7 @@ public class Raycast : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, transform.forward, out hit, pickingRange))
                 {
+                    // Need to change this code to a switch
                     //Debug.DrawRay(transform.position, transform.foward * hit.distance, Color.red);
                     Timing();
                     if (hit.collider.CompareTag("Flowers"))
@@ -187,8 +188,8 @@ public class Raycast : MonoBehaviour
                         }
                     }
                     
-                    // Npc talk
-                    // Fixed the problem that the player must be looking at the npc to close the conversation tab
+                    /* Npc talk
+                    Fixed the problem that the player must be looking at the npc to close the conversation tab*/
                     if (hit.collider.CompareTag("TiredBoy"))
                     {
                         // Pausing the game

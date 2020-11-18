@@ -53,25 +53,25 @@
      <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Script\WalkingNpcMovement.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\Script\Raycast.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Script\AvoidWater.cs" />
+     <Compile Include="Assets\Script\WalkingNpc.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-     <Compile Include="Assets\Script\WalkingNpc.cs" />
-     <Compile Include="Assets\Script\WalkingNpcMovement.cs" />
-     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
-     <None Include="Assets\Polygonal Foliage Asset Package\Shaders\Cloud.shader" />
+     <None Include="Assets\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
+     <None Include="Assets\Decoration And Characters Packs\Polygonal Foliage Asset Package\Shaders\Cloud.shader" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
-     <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />
-     <None Include="Assets\Polygonal Foliage Asset Package\Shaders\Diffuse.shader" />
-     <None Include="Assets\SimpleSky\ReadMe.txt" />
-     <None Include="Assets\SimpleLowPolyNature\Readme.txt" />
-     <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
-     <None Include="Assets\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
+     <None Include="Assets\Decoration And Characters Packs\HolyShift\Shaders\FXWaterLowpoly.shader" />
+     <None Include="Assets\Decoration And Characters Packs\Polygonal Foliage Asset Package\Shaders\Diffuse.shader" />
+     <None Include="Assets\Decoration And Characters Packs\SimpleSky\ReadMe.txt" />
+     <None Include="Assets\Decoration And Characters Packs\SimpleLowPolyNature\Readme.txt" />
+     <None Include="Assets\Decoration And Characters Packs\HolyShift\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Decoration And Characters Packs\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/Cooking With Grandma/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

@@ -9,7 +9,8 @@ public class WalkingNpc : MonoBehaviour
     /// <summary>
     /// Idea: the npc will walk until it get in the WalkingDestination
     /// and after he got in 1 walking destination he will move to the next one
-    /// Since the walker will follow the box destination
+    /// Since the walker will follow the box destination.
+    /// I decided to do like this because if it was the npc changing positions it would just disappear and reappear again
     /// </summary>
 
     // User Story 3
