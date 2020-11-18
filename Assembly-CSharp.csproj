@@ -53,10 +53,10 @@
      <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Script\NpcAnimation.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+     <Compile Include="Assets\Script\Raycast.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Script\AvoidWater.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
@@ -67,7 +67,9 @@
      <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />
      <None Include="Assets\Polygonal Foliage Asset Package\Shaders\Diffuse.shader" />
      <None Include="Assets\SimpleSky\ReadMe.txt" />
+     <None Include="Assets\SimpleLowPolyNature\Readme.txt" />
      <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/Cooking With Grandma/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Water
+  - Flowers
+  - mushroom
+  - Egg
+  - Inventory
   layers:
   - Default
   - TransparentFX
@@ -15,8 +19,8 @@ TagManager:
   - 
   - 
   - Post Processing
-  - 
-  - 
+  - Character
+  - Target
   - 
   - 
   - 

@@ -9,10 +9,6 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="HolyShift" t="Include">
-          <e p="ReadMe.txt" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="CheckForStandardAssets.cs" t="Include" />
-          </e>
           <e p="Shaders" t="Include">
             <e p="FXWaterLowpoly.shader" t="Include" />
             <e p="WaterInclude.cginc" t="Include" />
@@ -55,7 +51,13 @@
         <e p="Script" t="Include">
           <e p="AvoidWater.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
-          <e p="NpcAnimation.cs" t="Include" />
+          <e p="Raycast.cs" t="Include" />
+        </e>
+        <e p="SimpleLowPolyNature" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="SimpleWater.shader" t="Include" />
+          </e>
         </e>
         <e p="SimpleSky" t="Include">
           <e p="ReadMe.txt" t="Include" />
