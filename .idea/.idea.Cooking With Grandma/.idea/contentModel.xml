@@ -52,6 +52,8 @@
           <e p="AvoidWater.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Raycast.cs" t="Include" />
+          <e p="WalkingNpc.cs" t="Include" />
+          <e p="WalkingNpcMovement.cs" t="Include" />
         </e>
         <e p="SimpleLowPolyNature" t="Include">
           <e p="ReadMe.txt" t="Include" />

@@ -9,6 +9,11 @@ TagManager:
   - mushroom
   - Egg
   - Inventory
+  - TiredBoy
+  - Can'tTalk
+  - iCantTalkImWorking
+  - iCantTalkImTalking
+  - iCantTalkImFishing
   layers:
   - Default
   - TransparentFX

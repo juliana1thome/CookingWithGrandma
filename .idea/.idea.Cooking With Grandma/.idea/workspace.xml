@@ -15,18 +15,54 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Mecanim/female_chair.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Mecanim/female_chair.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Mecanim/male_chair.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Mecanim/male_chair.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/Tex_0004_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/Tex_0004_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_female.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_female.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_female.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_female.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_male.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_male.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_male.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/Materials/texture_male.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/female.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/female.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/female.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/female.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/male.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/male.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/male.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Chatacter/male.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Materials/texture_female.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Materials/texture_female.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Materials/texture_male.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Materials/texture_male.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/Materials/floor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/Materials/floor.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/Materials/floor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/Materials/floor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/chair.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/chair.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/chair_root.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/chair_root.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/floor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EverydayMotionPackFree/Model/Prop/floor.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Terrain.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Terrain.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NpcAnimation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NpcAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Raycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Raycast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/PhysicsMaterials/ZeroFriction.physicMaterial" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/PhysicsMaterials/ZeroFriction.physicMaterial" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/New Terrain.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +71,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/WalkingNpc.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,7 +87,12 @@
         <option value="$PROJECT_DIR$/Assets/Picking.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Pick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/NpcAnimations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/WalkingNpcMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Raycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/WalkingNpc.cs" />
       </list>
     </option>
   </component>
@@ -109,6 +153,8 @@
       <workItem from="1605141899874" duration="454000" />
       <workItem from="1605142722654" duration="623000" />
       <workItem from="1605224382509" duration="1038000" />
+      <workItem from="1605660223879" duration="19462000" />
+      <workItem from="1605685581085" duration="592000" />
     </task>
     <servers />
   </component>
@@ -133,10 +179,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="171" y="93" width="1272" height="678" key="VCS.FileHistoryDialog" timestamp="1605126478065">
+    <state x="171" y="93" width="1272" height="678" key="VCS.FileHistoryDialog" timestamp="1605678604663">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="171" y="93" width="1272" height="678" key="VCS.FileHistoryDialog/78.0.1458.864@78.0.1458.864" timestamp="1605126478065" />
+    <state x="171" y="93" width="1272" height="678" key="VCS.FileHistoryDialog/78.0.1458.864@78.0.1458.864" timestamp="1605678604663" />
+    <state x="625" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605664385798">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="625" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/78.0.1458.864@78.0.1458.864" timestamp="1605664385798" />
     <state x="830" y="200" key="run.anything.popup" timestamp="1605130126971">
       <screen x="78" y="0" width="1458" height="864" />
     </state>

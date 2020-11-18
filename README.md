@@ -15,8 +15,12 @@ As a player I want to be able to pick some flowers and eggs, so I can fulfil the
 
 #User Story 3
 As a player I want NPCS with animations, so I can feel the game is alive
-- [ ] Add townies 
-- [ ] Add animations
+- [x] Add townies 
+- [x] Create Scrip WalkingNpc
+- [x] Add the talking functionality to the Script Raycast
+- [x] Change animation sit for male and female 
+- [x] Create NavMeshSurface
+- [x] Add animations
 
 #User Story 4
 As a player I want a main menu before I start my game

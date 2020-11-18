@@ -61,6 +61,8 @@
      <Compile Include="Assets\Script\AvoidWater.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\Script\WalkingNpc.cs" />
+     <Compile Include="Assets\Script\WalkingNpcMovement.cs" />
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\Polygonal Foliage Asset Package\Shaders\Cloud.shader" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
