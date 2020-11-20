@@ -32,10 +32,11 @@ As a player I want a main menu before I start my game
 
 #User Story 5
 As a player I want a pause menu with return main menu button and settings button
-- [ ] Add pause menu
-- [ ] Add Settings button 
-- [ ] Add Exit button
-- [ ] Add settings
+- [x] Add pause menu
+- [x] Fix Inventory look
+- [x] Add Settings button 
+- [x] Add MainMenu button
+- [x] Add settings
 
 #User Story 6
 As a player I want day and night cycle with a timer, so I have time to finish the game

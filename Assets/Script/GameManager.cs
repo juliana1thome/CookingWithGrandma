@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,7 +25,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text flowersCounterTxt;
     [SerializeField] private Text mushroomCounterTxt;
 
-    
+    // User Story 5
+    private bool pauseMenuTruth = false;
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject pauseMenuCanavas;
+    [SerializeField] private GameObject settings;
+
+
     // User Story 7
     public int milk = 0;
     public bool milkTruth = false;
@@ -53,6 +60,33 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void EndGame()
+    {
+        
+    }
+    
+    // User Story 5
+    public void MainMenuButton()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+    
+    // User Story 5
+    public void SettingButton()
+    {
+       pauseMenuCanavas.SetActive(false);
+       settings.SetActive(true);
+       Cursor.visible = true;
+       Cursor.lockState = CursorLockMode.None;
+    }
+    
+    // User Story 5
+    public void ReturnButton()
+    {
+        pauseMenuCanavas.SetActive(true);
+        settings.SetActive(false);
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -72,11 +106,51 @@ public class GameManager : MonoBehaviour
                 inventory.SetActive(true);
                 inventoryTruth = true;
             }
+            
+            // Pausing the game
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (pauseMenuTruth == true)
+            {
+                pauseMenu.SetActive(false);
+                pauseMenuTruth = false;
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+            else
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                pauseMenuCanavas.SetActive(true);
+                pauseMenu.SetActive(true);
+                pauseMenuTruth = true;
+            }
+            
+            // Pausing the game
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+        }
+        
         if (egg == 3 && flowers == 4 && mushroom == 2 && milk == 2)
         {
             victory = true;
+            
         }
     }
 }

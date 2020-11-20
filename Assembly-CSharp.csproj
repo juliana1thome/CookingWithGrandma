@@ -54,6 +54,7 @@
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Script\WalkingNpcMovement.cs" />
+     <Compile Include="Assets\Script\SetResolution.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
@@ -67,7 +68,6 @@
      <Compile Include="Assets\Script\SetGFX.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\Script\MainMenuManager.cs" />
-     <Compile Include="Assets\Script\SetResolution.cs" />
      <None Include="Assets\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\Decoration And Characters Packs\Polygonal Foliage Asset Package\Shaders\Cloud.shader" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />

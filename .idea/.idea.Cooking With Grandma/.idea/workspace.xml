@@ -11,17 +11,154 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cafc896f-5f0d-48c6-9b5d-4de56c8c800c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cooking With Grandma/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SampleScenes/AudioMixers/JetPlane.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SampleScenes/AudioMixers/JetPlane.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Background Anim.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Background Anim.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Move.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Move.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Parallax Scene 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Parallax Scene 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0000_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0000_foreground.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0001_buildings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0001_buildings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0002_far-buildings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0002_far-buildings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0003_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0003_bg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_01_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_01_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_02_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_02_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_03_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_03_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_04_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_04_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_05_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_05_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/Parallax Scene 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/Parallax Scene 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_01_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_01_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_02_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_02_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_03_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_03_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_04_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_04_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_05_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_05_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_06_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_06_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_07_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_07_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/Parallax Scene 3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/Parallax Scene 3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_01_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_01_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_02_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_02_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_03_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_03_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_04_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_04_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_05_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_05_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_06_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_06_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_07_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_07_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_08_1920 x 1080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_08_1920 x 1080.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/Parallax Scene 4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/Parallax Scene 4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/Background 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/Background 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/background0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/background0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/Background 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/Background 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/background1-720.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/background1-720.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/Background 3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/Background 3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/background3-720.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/background3-720.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/Background 4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/Background 4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/rock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/rock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Font.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsani.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsani.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsans.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-bg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-foreground-trees.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-foreground-trees.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-montain-far.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-montain-far.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-mountains.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-mountains.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-trees.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-trees.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background/background3-720.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background/background3-720.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Select.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Demo Assets/Select.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Exit Menu.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Exit Menu/Exit Menu.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Exit Menu/Exit Menu.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade In.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade In.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade out.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade out.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Menu bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/Menu bar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow 1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow 1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow Deactivate.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow Deactivate.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow Move.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow Move.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow Static.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Arrow Static.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Flecha4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Inactive.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main menu with parallax FREE/Assets/arrow/Inactive.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Terrain.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Terrain.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/WalkingNpc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/WalkingNpc.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/WalkingNpcMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/WalkingNpcMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-firstpass.csprojAssemblyReference.cache" afterDir="false" />
     </list>
@@ -53,15 +190,16 @@
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs" />
         <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Raycast.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/WalkingNpcMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/WalkingNpc.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/MainMenuManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Load.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/MusicController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/SetGFX.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ButtonHanddler.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/SetResolution.cs" />
+        <option value="$PROJECT_DIR$/Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -131,6 +269,7 @@
       <workItem from="1605842203118" duration="3003000" />
       <workItem from="1605906786090" duration="1811000" />
       <workItem from="1605909004248" duration="1197000" />
+      <workItem from="1605912511570" duration="3033000" />
     </task>
     <servers />
   </component>

@@ -17,7 +17,6 @@ public class MainMenuManager : MonoBehaviour
     private void Start()
     {
         PanelToggle(0);
-        
     }
     
     public void PlayButton()
