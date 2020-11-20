@@ -50,12 +50,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-     <Compile Include="Assets\Script\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
-     <Compile Include="Assets\Script\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
-     <Compile Include="Assets\Script\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
-     <Compile Include="Assets\Script\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
-     <Compile Include="Assets\Script\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
+     <Compile Include="Assets\Main menu with parallax FREE\Editor\MenuEditor.cs" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>D:/Unity/Cooking With Grandma/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
@@ -664,9 +659,17 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5bb17da5-136f-4d53-791d-da2470f22c01}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{a23b19bd-4af8-0836-e004-5768c923528a}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{332e0d3f-d9cb-64f2-f21c-ba4033d54ac7}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

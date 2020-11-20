@@ -3004,6 +3004,7 @@ GameObject:
   - component: {fileID: 232901729}
   - component: {fileID: 232901728}
   - component: {fileID: 232901731}
+  - component: {fileID: 232901727}
   m_Layer: 0
   m_Name: Destination For Walker
   m_TagString: Untagged
@@ -3011,6 +3012,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &232901727
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232901726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &232901728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3086,6 +3100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18182cdae2a15b148a5be9119e048a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoints: []
   WalkingDestination: 0
 --- !u!1001 &241936832
 PrefabInstance:
@@ -8041,6 +8056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 232901726}
+  agent: {fileID: 0}
 --- !u!195 &554316664
 NavMeshAgent:
   m_ObjectHideFlags: 0

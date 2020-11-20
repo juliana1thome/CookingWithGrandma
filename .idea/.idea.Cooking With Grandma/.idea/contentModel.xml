@@ -53,7 +53,12 @@
         <e p="Script" t="Include">
           <e p="AvoidWater.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Load.cs" t="Include" />
+          <e p="MainMenuManager.cs" t="Include" />
+          <e p="MusicController.cs" t="Include" />
           <e p="Raycast.cs" t="Include" />
+          <e p="SetGFX.cs" t="Include" />
+          <e p="SetResolution.cs" t="Include" />
           <e p="WalkingNpc.cs" t="Include" />
           <e p="WalkingNpcMovement.cs" t="Include" />
         </e>

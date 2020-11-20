@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class WalkingNpcMovement : MonoBehaviour
 {
     public GameObject destination;
-    private NavMeshAgent agent;
-    
+    public NavMeshAgent agent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,9 @@ public class WalkingNpcMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //agent.SetDestination(destination.transform.position);
-        agent.destination = destination.transform.position;
+        if (agent.destination == destination.transform.position)
+        {
+            agent.SetDestination(destination.transform.position);
+        }
     }
 }

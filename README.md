@@ -24,12 +24,17 @@ As a player I want NPCS with animations, so I can feel the game is alive
 
 #User Story 4
 As a player I want a main menu before I start my game
-- [ ] Add main menu
-- [ ] Add button load game
+- [x] Add main menu
+- [x] Add button load game
+- [x] Add button Settings
+- [x] Add button Exit
+- [x] Add settings
 
 #User Story 5
 As a player I want a pause menu with return main menu button and settings button
 - [ ] Add pause menu
+- [ ] Add Settings button 
+- [ ] Add Exit button
 - [ ] Add settings
 
 #User Story 6
@@ -50,3 +55,8 @@ As a player I want a store in my game
 #User Story 9
 As a player I want the game to have story
 - [ ] Add all the story pop-ups
+- [ ] Fix any bugs
+- [ ] Create build game 
+- [x] Add load scene
+- [ ] Add more light
+

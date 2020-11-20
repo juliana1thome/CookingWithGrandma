@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class WalkingNpc : MonoBehaviour
 {
@@ -14,64 +15,69 @@ public class WalkingNpc : MonoBehaviour
     /// </summary>
 
     // User Story 3
-
-    public int WalkingDestination;
+    public List<Vector3> wayPoints = new List<Vector3>();// Create a list of WayPoints
+    public int WalkingDestination = 0;// It is public for Debug
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("TiredBoy"))
+        do
         {
-            // In this one it will go to the fist again in the next walking destination
-            if (WalkingDestination == 9)
+            switch (WalkingDestination)
             {
-                this.gameObject.transform.position = new Vector3(264.74f, 115.50f, 407.62f);
-                WalkingDestination = 0;
+                // In this one it will go to the fist again in the next walking destination
+                case 9:
+                    wayPoints.Add(new Vector3(264.74f, 115.52f, 407.62f));
+                    WalkingDestination = 0;
+                    break;
+                
+                case 8:
+                    wayPoints.Add(new Vector3(397.2f, 114.944f, 512.2f));
+                    WalkingDestination = 9;
+                    break;
+                
+                case 7:
+                    wayPoints.Add(new Vector3(438.8f, 113.2f, 512.2f));
+                    WalkingDestination = 8;
+                    break;
+                
+                case 6:
+                    wayPoints.Add(new Vector3(474.5f, 115.21f, 455.3f));
+                    WalkingDestination = 7;
+                    break;
+                
+                case 5:
+                    wayPoints.Add(new Vector3(474.5f, 116.468f, 322.5f));
+                    WalkingDestination = 6;
+                    break;
+                
+                case 4:
+                    wayPoints.Add(new Vector3(443.05f, 115.181f, 286.51f));
+                    WalkingDestination = 5;
+                    break;
+                
+                case 3:
+                    wayPoints.Add(new Vector3(443.05f, 115.181f, 286.51f));
+                    this.gameObject.transform.position = wayPoints[0];
+                    WalkingDestination = 4;
+                    break;
+                
+                case 2:
+                    wayPoints.Add(new Vector3(369.5f, 116.952f, 293.5f));
+                    WalkingDestination = 3;
+                    break;
+                
+                case 1:
+                    wayPoints.Add(new Vector3(315f, 120.193f, 329.1f));
+                    this.gameObject.transform.position = wayPoints[1];
+                    WalkingDestination = 2;
+                    break;
+                
+                case 0:
+                    wayPoints.Add(new Vector3(264.74f, 115.50f, 407.62f));
+                    this.gameObject.transform.position = wayPoints[0];
+                    WalkingDestination = 1;
+                    break;
             }
-            if (WalkingDestination == 8)
-            {
-                this.gameObject.transform.position = new Vector3(315f, 120.193f, 329.1f);
-                WalkingDestination = 9;
-            }
-            if (WalkingDestination == 7)
-            {
-                this.gameObject.transform.position = new Vector3(369.5f, 116.952f, 293.5f);
-                WalkingDestination = 8;
-            }
-            if (WalkingDestination == 6)
-            {
-                this.gameObject.transform.position = new Vector3(443.05f, 115.181f, 286.51f);
-                WalkingDestination = 7;
-            }
-            if (WalkingDestination == 5)
-            {
-                this.gameObject.transform.position = new Vector3(474.5f, 116.468f, 322.5f);
-                WalkingDestination = 6;
-            }
-            if (WalkingDestination == 4)
-            {
-                this.gameObject.transform.position = new Vector3(474.5f, 115.21f, 455.3f);
-                WalkingDestination = 5;
-            }
-            if (WalkingDestination == 3)
-            {
-                this.gameObject.transform.position = new Vector3(438.8f, 113.2f, 512.2f);
-                WalkingDestination = 4;
-            }
-            if (WalkingDestination == 2)
-            {
-                this.gameObject.transform.position = new Vector3(397.2f,114.944f,512.2f);
-                WalkingDestination = 3;
-            }
-            if (WalkingDestination == 1)
-            {
-                this.gameObject.transform.position = new Vector3(336.11f, 114.944f, 517.1f);
-                WalkingDestination = 2;
-            }
-            if (WalkingDestination == 0)
-            {
-                this.gameObject.transform.position = new Vector3(264.74f, 115.52f, 407.62f);
-                WalkingDestination = 1;
-            }
-        }
+        } while (other.CompareTag("TiredBoy"));
     }
 }
