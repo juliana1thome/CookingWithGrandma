@@ -63,15 +63,6 @@
           <e p="WalkingNpcMovement.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
-          <e p="2D" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="Camera2DFollow.cs" t="Include" />
-              <e p="CameraFollow.cs" t="Include" />
-              <e p="Platformer2DUserControl.cs" t="Include" />
-              <e p="PlatformerCharacter2D.cs" t="Include" />
-              <e p="Restarter.cs" t="Include" />
-            </e>
-          </e>
           <e p="Cameras" t="Include">
             <e p="CameraGuidelines.txt" t="Include" />
             <e p="Scripts" t="Include">

@@ -4,16 +4,16 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class Raycast : MonoBehaviour
 {
+    
     /// <summary>
-    /// Picking first logic --> Credit: Marc-André Larouche// ask if i need to add this since i modified the script
+    /// User Story 7--> Bow Firing Logic And Code --> Credit: Marc-André Larouche
     /// </summary>
-
+    
     // User Story 2
     [SerializeField] private float pickingRange = 10f;
     private float secondsCount;
     private bool picking = false; // Did i press the button picking?
     public Camera cam;
-
 
     // User Story 2 txt
     [SerializeField] private GameObject youPickedFlowersTxt;
@@ -28,15 +28,20 @@ public class Raycast : MonoBehaviour
     [SerializeField] private GameObject iCantTalkImTalkingTxt;
     [SerializeField] private GameObject iCantTalkImFishingTxt;
 
+    // User Story 7
+    [SerializeField] private GameObject bow;
+    private bool bowTruth = false;
+    [SerializeField] private GameObject arrow;
+    [SerializeField] private GameObject crossair;
+    public Transform arrowCreator;
+    public float speed = 15f;
+    private bool firing = false;
+    [SerializeField] public GameObject enemy;
+    [SerializeField] private GameObject youDefeatedTheEnemy;
+    [SerializeField] private GameObject stollenEggSituation;
 
     // Adding my gameManager
     public GameManager gameManager;
-
-    public void OnPick(InputAction.CallbackContext context) // Problem this is not transforming the picking into true
-    {
-        picking = context.performed; // Am i picking?
-        Debug.Log(picking);
-    }
 
     // It will close any open txt
     public void Timing()
@@ -45,6 +50,8 @@ public class Raycast : MonoBehaviour
         youPickedEggsTxt.SetActive(false);
         youPickedMushroomsTxt.SetActive(false);
         pressETxt.SetActive(false);
+        arrow.SetActive(true);
+        youDefeatedTheEnemy.SetActive(false);
     }
 
     // If it is looking to something that the player can pick
@@ -60,12 +67,26 @@ public class Raycast : MonoBehaviour
         }
         return false;
     }
+    
+    // User Story 2
+    public void OnPick(InputAction.CallbackContext context)
+    {
+        picking = context.performed;
+        Debug.Log(picking);
+    }
 
+    // User Story 7
+    public void OnFire(InputAction.CallbackContext context)
+    {
+        firing = context.performed;
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameManager.instance;
     }
+
 
 
     // Update is called once per frame
@@ -89,17 +110,29 @@ public class Raycast : MonoBehaviour
                         youPickedFlowersTxt.SetActive(true);
                         Debug.Log("You just picked one flower");
                         //You just picked one flower
-                        Invoke("Timing", 3.0f);
+                        Invoke("Timing", 4.0f);
                     }
 
                     if (hit.collider.CompareTag("Egg"))
                     {
                         hit.collider.gameObject.SetActive(false);
-                        gameManager.egg++;
-                        gameManager.eggTruth = true; // I have flowers in my inventory, enough for win the game
-                        youPickedEggsTxt.SetActive(true);
                         //You just picked one egg
-                        Invoke("Timing", 3.0f);
+                        stollenEggSituation.SetActive(true);
+                        Time.timeScale = 0;
+                        
+                        // Fix closing key
+                        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
+                        {
+                            if (Input.GetKey(vKey))
+                            {
+
+                                stollenEggSituation.SetActive(false);
+                                bowTruth = true;
+                                enemy.SetActive(true);
+                                Time.timeScale = 1;
+                            }
+
+                        }
                     }
 
                     if (hit.collider.CompareTag("mushroom"))
@@ -108,8 +141,8 @@ public class Raycast : MonoBehaviour
                         gameManager.mushroom++;
                         gameManager.mushroomTruth = true; // I have flowers in my inventory, enough for win the game
                         youPickedMushroomsTxt.SetActive(true);
+                        Invoke("Timing", 4.0f);
                         //You just picked one mushroom
-                        Invoke("Timing", 3.0f);
                     }
                     
                     // Npc talk
@@ -188,8 +221,6 @@ public class Raycast : MonoBehaviour
                         }
                     }
                     
-                    /* Npc talk
-                    Fixed the problem that the player must be looking at the npc to close the conversation tab*/
                     if (hit.collider.CompareTag("TiredBoy"))
                     {
                         // Pausing the game
@@ -219,6 +250,48 @@ public class Raycast : MonoBehaviour
         else
         {
             Timing();
+        }
+
+        // User Story 7, Bow Shoot
+        if (bowTruth == false && bowTruth == false)
+        {
+            bow.SetActive(false);
+            bowTruth = false;
+            arrow.SetActive(false);
+            crossair.SetActive(false);
+        }
+        else
+        {
+            bow.SetActive(true);
+            bowTruth = true;
+            arrow.SetActive(true);
+            crossair.SetActive(true);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.forward, out hit, 100))
+            {
+                // Try to implement the arrow having a trajectory
+                
+                if (hit.collider.CompareTag("Enemy"))
+                {
+                    Debug.Log("Matou");
+                    hit.collider.gameObject.SetActive(false);
+                    gameManager.egg++;
+                    youPickedEggsTxt.SetActive(true);
+                    youDefeatedTheEnemy.SetActive(true);
+                    Invoke("Timing", 4.0f);
+                    gameManager.eggTruth = true; // I have enough eggs to win
+                    bow.SetActive(false);
+                    bowTruth = false;
+                    arrow.SetActive(false);
+                    crossair.SetActive(false);
+                }
+                
+            }
+
         }
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - iCantTalkImTalking
   - iCantTalkImFishing
   - PauseMenu
+  - Enemy
   layers:
   - Default
   - TransparentFX

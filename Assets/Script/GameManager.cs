@@ -31,6 +31,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenuCanavas;
     [SerializeField] private GameObject settings;
 
+    // User Story 5
+    public Text timerText;
+    private float seconds;
+    private int minutes;
+    
+    // User Story 6
+    [SerializeField] private GameObject youWin;
+    [SerializeField] private GameObject youLose;
+
 
     // User Story 7
     public int milk = 0;
@@ -60,10 +69,35 @@ public class GameManager : MonoBehaviour
         
     }
 
+    // User Story 6
     public void EndGame()
     {
-        
+        if (victory == true && minutes < 20)
+        {
+            youWin.SetActive(true);
+            youLose.SetActive(false);
+            
+        }
+
+        if (victory == false && minutes >= 20)
+        {
+            youWin.SetActive(false);
+            youLose.SetActive(true);
+        }
     }
+    
+    // User Story 6
+    public void Timer()
+    {
+        //set timer UI
+        seconds += Time.deltaTime;
+        timerText.text = minutes +"m:"+(int)seconds + "s";
+        if(seconds >= 60){
+            
+            minutes++;
+            seconds = 0;
+        }
+    }    
     
     // User Story 5
     public void MainMenuButton()
@@ -90,6 +124,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Timer();
+
+        EndGame();
+        
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (inventoryTruth == true)
@@ -117,7 +155,7 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1;
             }
         }
-
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (pauseMenuTruth == true)
