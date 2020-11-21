@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class Raycast : MonoBehaviour
 {
@@ -35,10 +36,28 @@ public class Raycast : MonoBehaviour
     [SerializeField] private GameObject crossair;
     public Transform arrowCreator;
     public float speed = 15f;
-    private bool firing = false;
+    private bool steallingHappening = false;
+    private bool enemyDead = false;
     [SerializeField] public GameObject enemy;
     [SerializeField] private GameObject youDefeatedTheEnemy;
     [SerializeField] private GameObject stollenEggSituation;
+    
+    // User Story 9
+    [SerializeField] private GameObject store;
+    [SerializeField] private GameObject sellingStatus;
+    [SerializeField] private GameObject youDontHaveMoneyForThisTxt;
+    [SerializeField] private GameObject youDontHaveThisItemToSellTxt;
+    [SerializeField] private GameObject youSoldAnItem;
+    [SerializeField] private GameObject youBoughtAnItem;
+    public int coins = 0;
+    
+    // User Story 9 txt
+    [SerializeField] private Text eggCounterTxt;
+    [SerializeField] private Text milkCounterTxt;
+    [SerializeField] private Text flowersCounterTxt;
+    [SerializeField] private Text mushroomCounterTxt;
+    public Text CoinsText;
+    private float closeall;
 
     // Adding my gameManager
     public GameManager gameManager;
@@ -50,8 +69,12 @@ public class Raycast : MonoBehaviour
         youPickedEggsTxt.SetActive(false);
         youPickedMushroomsTxt.SetActive(false);
         pressETxt.SetActive(false);
-        arrow.SetActive(true);
         youDefeatedTheEnemy.SetActive(false);
+        youSoldAnItem.SetActive(false);
+        youBoughtAnItem.SetActive(false);
+        youDontHaveMoneyForThisTxt.SetActive(false);
+        youDontHaveThisItemToSellTxt.SetActive(false);
+        enemyDead = false;
     }
 
     // If it is looking to something that the player can pick
@@ -60,7 +83,7 @@ public class Raycast : MonoBehaviour
         RaycastHit hit; //received the value from the raycast
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, pickingRange) &&
             (hit.collider.CompareTag("Egg") || hit.collider.CompareTag("Flowers") ||
-             hit.collider.CompareTag("mushroom") || hit.collider.CompareTag("TiredBoy") ||  hit.collider.CompareTag("iCantTalkImFishing") ||  hit.collider.CompareTag("iCantTalkImTalking") ||  hit.collider.CompareTag("iCantTalkImWorking")))
+             hit.collider.CompareTag("mushroom") || hit.collider.CompareTag("TiredBoy") ||  hit.collider.CompareTag("iCantTalkImFishing") ||  hit.collider.CompareTag("iCantTalkImTalking") ||  hit.collider.CompareTag("iCantTalkImWorking") || hit.collider.CompareTag("Store")))
         {
             pressETxt.SetActive(true);
             return true;
@@ -75,20 +98,105 @@ public class Raycast : MonoBehaviour
         Debug.Log(picking);
     }
 
-    // User Story 7
-    public void OnFire(InputAction.CallbackContext context)
+    //Store
+    // User Story 9
+    public void EggSellButton()
     {
-        firing = context.performed;
+        if (gameManager.egg <= 0)
+        {
+            Timing();
+            youDontHaveThisItemToSellTxt.SetActive(true);
+            Invoke("Timing", 3.0f);
+        }
+
+        if (gameManager.egg > 0)
+        {
+            Timing();
+            youSoldAnItem.SetActive(true);
+            coins += 20;
+            gameManager.egg--;
+        }
     }
+    
+    // User Story 9
+    public void MilkBuyButton()
+    {
+        if (coins <= 0)
+        {
+            Timing();
+            youDontHaveMoneyForThisTxt.SetActive(true);
+            Invoke("Timing", 3.0f);
+        }
+        if(coins >= 50)
+        {
+            Timing();
+            youBoughtAnItem.SetActive(true);
+            coins -= 50;
+            gameManager.milk++;
+        }
+    }
+    
+    // User Story 9
+    public void MushroomSellButton()
+    {
+        if (gameManager.mushroom <= 0)
+        {
+            Timing();
+            youDontHaveThisItemToSellTxt.SetActive(true);
+            Invoke("Timing", 3.0f);
+        }
+        else
+        {
+            Timing();
+            youSoldAnItem.SetActive(true);
+            coins += 2;
+            gameManager.mushroom--;
+        }
+    }
+    
+    // User Story 9
+    public void FlowersSellButton()
+    {
+        if (gameManager.flowers <= 0)
+        {
+            Timing();
+            youDontHaveThisItemToSellTxt.SetActive(true);
+            Invoke("Timing", 3.0f);
+        }
+        else
+        {
+            Timing();
+            youSoldAnItem.SetActive(true);
+            coins += 2;
+            gameManager.flowers--;
+        }
+    }
+    
+    // User Story 9
+    public void EggBuyButton()
+    {
+        if (coins <= 0)
+        {
+            Timing();
+            youDontHaveMoneyForThisTxt.SetActive(true);
+            Invoke("Timing", 3.0f);
+        }
+        if(coins >= 50)
+        {
+            Timing();
+            youBoughtAnItem.SetActive(true);
+            coins -= 50;
+            gameManager.egg++;
+        }
+    }
+
     
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameManager.instance;
     }
-
-
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -100,7 +208,6 @@ public class Raycast : MonoBehaviour
                 if (Physics.Raycast(transform.position, transform.forward, out hit, pickingRange))
                 {
                     // Need to change this code to a switch
-                    //Debug.DrawRay(transform.position, transform.foward * hit.distance, Color.red);
                     Timing();
                     if (hit.collider.CompareTag("Flowers"))
                     {
@@ -119,20 +226,7 @@ public class Raycast : MonoBehaviour
                         //You just picked one egg
                         stollenEggSituation.SetActive(true);
                         Time.timeScale = 0;
-                        
-                        // Fix closing key
-                        foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
-                        {
-                            if (Input.GetKey(vKey))
-                            {
-
-                                stollenEggSituation.SetActive(false);
-                                bowTruth = true;
-                                enemy.SetActive(true);
-                                Time.timeScale = 1;
-                            }
-
-                        }
+                        steallingHappening = true;
                     }
 
                     if (hit.collider.CompareTag("mushroom"))
@@ -145,7 +239,7 @@ public class Raycast : MonoBehaviour
                         //You just picked one mushroom
                     }
                     
-                    // Npc talk
+                    // Npc talk User Story 3
                     if (hit.collider.CompareTag("iCantTalkImWorking"))
                     {
                         // Pausing the game
@@ -171,7 +265,7 @@ public class Raycast : MonoBehaviour
                         
                     }
                     
-                    // Npc talk
+                    // Npc talk User Story 3
                     if (hit.collider.CompareTag("iCantTalkImTalking"))
                     {
                         // Pausing the game
@@ -196,7 +290,39 @@ public class Raycast : MonoBehaviour
                         }
                     }
                     
-                    // Npc talk
+                    // Npc talk User Story 9
+                    if (hit.collider.CompareTag("Store"))
+                    {
+                        // Pausing the game
+                        if (Time.timeScale == 1)
+                        {
+                            Time.timeScale = 0;
+                        }
+                        else
+                        {
+                            Time.timeScale = 1;
+                        }
+                        
+                        if (Talking == true)
+                        {
+                            store.SetActive(false);
+                            Talking = false;
+                            Cursor.visible = false;
+                            Cursor.lockState = CursorLockMode.Locked;
+                            sellingStatus.SetActive(false);
+                            Timing();
+                        }
+                        else
+                        {
+                            store.SetActive(true);
+                            Talking = true;
+                            Cursor.visible = true;
+                            Cursor.lockState = CursorLockMode.None;
+                            sellingStatus.SetActive(true);
+                        }
+                    }
+                    
+                    // Npc talk User Story 3
                     if (hit.collider.CompareTag("iCantTalkImFishing"))
                     {
                         // Pausing the game
@@ -221,6 +347,7 @@ public class Raycast : MonoBehaviour
                         }
                     }
                     
+                    // Npc talk User Story 3
                     if (hit.collider.CompareTag("TiredBoy"))
                     {
                         // Pausing the game
@@ -249,10 +376,10 @@ public class Raycast : MonoBehaviour
         }
         else
         {
-            Timing();
+            pressETxt.SetActive(false);
         }
-
-        // User Story 7, Bow Shoot
+        
+        // User Story 7
         if (bowTruth == false && bowTruth == false)
         {
             bow.SetActive(false);
@@ -267,8 +394,9 @@ public class Raycast : MonoBehaviour
             arrow.SetActive(true);
             crossair.SetActive(true);
         }
-
-        if (Input.GetMouseButtonDown(0))
+        
+        // User Story 7
+        if (Input.GetMouseButtonDown(0)) // add && bowTruth == true
         {
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.forward, out hit, 100))
@@ -281,18 +409,39 @@ public class Raycast : MonoBehaviour
                     hit.collider.gameObject.SetActive(false);
                     gameManager.egg++;
                     youPickedEggsTxt.SetActive(true);
-                    youDefeatedTheEnemy.SetActive(true);
-                    Invoke("Timing", 4.0f);
                     gameManager.eggTruth = true; // I have enough eggs to win
                     bow.SetActive(false);
                     bowTruth = false;
                     arrow.SetActive(false);
                     crossair.SetActive(false);
+                    enemyDead = true;
                 }
-                
             }
-
         }
+
+        // User Story 7
+        if (enemyDead == true)
+        {
+            youDefeatedTheEnemy.SetActive(true);
+            Invoke("Timing", 4);
+        }
+        
+        // User Story 7
+        if (Input.GetKeyDown(KeyCode.C)  && steallingHappening == true)
+        {
+            stollenEggSituation.SetActive(false);
+            bowTruth = true;
+            enemy.SetActive(true);
+            Time.timeScale = 1;
+        }
+        
+        // User Story 9
+        CoinsText.text = coins.ToString();
+        eggCounterTxt.text = gameManager.egg.ToString();
+        milkCounterTxt.text = gameManager.milk.ToString();
+        flowersCounterTxt.text = gameManager.flowers.ToString();
+        mushroomCounterTxt.text = gameManager.mushroom.ToString();
+        
     }
 }
 

@@ -16,6 +16,7 @@ TagManager:
   - iCantTalkImFishing
   - PauseMenu
   - Enemy
+  - Store
   layers:
   - Default
   - TransparentFX

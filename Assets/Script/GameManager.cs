@@ -185,7 +185,7 @@ public class GameManager : MonoBehaviour
             }
         }
         
-        if (egg == 3 && flowers == 4 && mushroom == 2 && milk == 2)
+        if (egg == 1 && flowers == 4 && mushroom == 4 && milk == 1)
         {
             victory = true;
             

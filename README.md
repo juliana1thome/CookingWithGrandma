@@ -57,8 +57,10 @@ As a player, I want a list of controls in my main menu and an easy way to always
 
 #User Story 9
 As a player, I want a store in my game. So, I can sell my items and buy the last item. Therefore, I can win.
-- [ ] Add value for all objects.
-- [ ] Add store.
+- [x] Add value for all objects.
+- [x] Add a store.
+- [x] Add coin counter.
+- [x] Add constrains for seel
 
 #User Story 10
 As a player, I want the game to have a story. So, I will feel more connected to the game.
