@@ -5,15 +5,10 @@ using UnityEngine.UI;
 
 public class Raycast : MonoBehaviour
 {
-    
-    /// <summary>
-    /// User Story 7--> Bow Firing Logic And Code --> Credit: Marc-André Larouche
-    /// </summary>
-    
     // User Story 2
-    [SerializeField] private float pickingRange = 10f;
+    [SerializeField] private float interactionRange = 20f;
     private float secondsCount;
-    private bool picking = false; // Did i press the button picking?
+    private bool picking = false;
     public Camera cam;
 
     // User Story 2 txt
@@ -80,8 +75,8 @@ public class Raycast : MonoBehaviour
     // If it is looking to something that the player can pick
     public bool Looking(bool isLooking)
     {
-        RaycastHit hit; //received the value from the raycast
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, pickingRange) &&
+        RaycastHit hit;
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, interactionRange) &&
             (hit.collider.CompareTag("Egg") || hit.collider.CompareTag("Flowers") ||
              hit.collider.CompareTag("mushroom") || hit.collider.CompareTag("TiredBoy") ||  hit.collider.CompareTag("iCantTalkImFishing") ||  hit.collider.CompareTag("iCantTalkImTalking") ||  hit.collider.CompareTag("iCantTalkImWorking") || hit.collider.CompareTag("Store")))
         {
@@ -97,9 +92,8 @@ public class Raycast : MonoBehaviour
         picking = context.performed;
         Debug.Log(picking);
     }
-
-    //Store
-    // User Story 9
+    
+    // User Story 9 Store System
     public void EggSellButton()
     {
         if (gameManager.egg <= 0)
@@ -118,7 +112,7 @@ public class Raycast : MonoBehaviour
         }
     }
     
-    // User Story 9
+    // User Story 9 Store
     public void MilkBuyButton()
     {
         if (coins <= 0)
@@ -136,7 +130,7 @@ public class Raycast : MonoBehaviour
         }
     }
     
-    // User Story 9
+    // User Story 9 Store
     public void MushroomSellButton()
     {
         if (gameManager.mushroom <= 0)
@@ -154,7 +148,7 @@ public class Raycast : MonoBehaviour
         }
     }
     
-    // User Story 9
+    // User Story 9 Store
     public void FlowersSellButton()
     {
         if (gameManager.flowers <= 0)
@@ -172,7 +166,7 @@ public class Raycast : MonoBehaviour
         }
     }
     
-    // User Story 9
+    // User Story 9 Store
     public void EggBuyButton()
     {
         if (coins <= 0)
@@ -205,38 +199,38 @@ public class Raycast : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 RaycastHit hit;
-                if (Physics.Raycast(transform.position, transform.forward, out hit, pickingRange))
+                if (Physics.Raycast(transform.position, transform.forward, out hit, interactionRange))
                 {
-                    // Need to change this code to a switch
                     Timing();
+                    
+                    // User Story 1
                     if (hit.collider.CompareTag("Flowers"))
                     {
                         hit.collider.gameObject.SetActive(false);
                         gameManager.flowers++;
-                        gameManager.flowersTruth = true; // I have flowers in my inventory, enough for win the game
+                        gameManager.flowersTruth = true; 
                         youPickedFlowersTxt.SetActive(true);
                         Debug.Log("You just picked one flower");
-                        //You just picked one flower
                         Invoke("Timing", 4.0f);
                     }
 
+                    // User Story 1
                     if (hit.collider.CompareTag("Egg"))
                     {
                         hit.collider.gameObject.SetActive(false);
-                        //You just picked one egg
                         stollenEggSituation.SetActive(true);
                         Time.timeScale = 0;
                         steallingHappening = true;
                     }
 
+                    // User Story 1
                     if (hit.collider.CompareTag("mushroom"))
                     {
                         hit.collider.gameObject.SetActive(false);
                         gameManager.mushroom++;
-                        gameManager.mushroomTruth = true; // I have flowers in my inventory, enough for win the game
+                        gameManager.mushroomTruth = true;
                         youPickedMushroomsTxt.SetActive(true);
                         Invoke("Timing", 4.0f);
-                        //You just picked one mushroom
                     }
                     
                     // Npc talk User Story 3
@@ -396,20 +390,18 @@ public class Raycast : MonoBehaviour
         }
         
         // User Story 7
-        if (Input.GetMouseButtonDown(0)) // add && bowTruth == true
+        if (Input.GetMouseButtonDown(0) && bowTruth)
         {
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.forward, out hit, 100))
             {
-                // Try to implement the arrow having a trajectory
-                
+
                 if (hit.collider.CompareTag("Enemy"))
                 {
-                    Debug.Log("Matou");
                     hit.collider.gameObject.SetActive(false);
                     gameManager.egg++;
                     youPickedEggsTxt.SetActive(true);
-                    gameManager.eggTruth = true; // I have enough eggs to win
+                    gameManager.eggTruth = true;
                     bow.SetActive(false);
                     bowTruth = false;
                     arrow.SetActive(false);
@@ -423,7 +415,7 @@ public class Raycast : MonoBehaviour
         if (enemyDead == true)
         {
             youDefeatedTheEnemy.SetActive(true);
-            Invoke("Timing", 4);
+            Invoke("Timing", 3);
         }
         
         // User Story 7
@@ -432,15 +424,16 @@ public class Raycast : MonoBehaviour
             stollenEggSituation.SetActive(false);
             bowTruth = true;
             enemy.SetActive(true);
+            steallingHappening = false;
             Time.timeScale = 1;
         }
         
         // User Story 9
         CoinsText.text = coins.ToString();
-        eggCounterTxt.text = gameManager.egg.ToString();
-        milkCounterTxt.text = gameManager.milk.ToString();
-        flowersCounterTxt.text = gameManager.flowers.ToString();
-        mushroomCounterTxt.text = gameManager.mushroom.ToString();
+        eggCounterTxt.text = "Eggs " + gameManager.egg.ToString();
+        milkCounterTxt.text = "Milk" + gameManager.milk.ToString();
+        flowersCounterTxt.text = "Flowers" + gameManager.flowers.ToString();
+        mushroomCounterTxt.text = "Mushroom" + gameManager.mushroom.ToString();
         
     }
 }

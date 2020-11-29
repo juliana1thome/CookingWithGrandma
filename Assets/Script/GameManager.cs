@@ -45,6 +45,13 @@ public class GameManager : MonoBehaviour
     public int milk = 0;
     public bool milkTruth = false;
     
+    // User Story 8
+    public bool generalActionsTruth = false;
+    [SerializeField] private GameObject generalActions;
+    
+    // User Story 9
+    [SerializeField] private GameObject grandmaNotesStory;
+    public bool grandmaNotesStoryTruth = false;
     
     // Referencing my singleton
     public static GameManager instance = null; 
@@ -66,23 +73,27 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // User Story 6
     public void EndGame()
     {
-        if (victory == true && minutes < 20)
+        if (victory == true && minutes < 5)
         {
             youWin.SetActive(true);
             youLose.SetActive(false);
-            
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
-        if (victory == false && minutes >= 20)
+        if (minutes >= 5 && victory == false)
         {
             youWin.SetActive(false);
             youLose.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     
@@ -125,9 +136,63 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Timer();
-
-        EndGame();
         
+        // User Story 9
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            // Pausing the game
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+                        
+            if (grandmaNotesStoryTruth == true)
+            {
+                grandmaNotesStory.SetActive(false);
+                grandmaNotesStoryTruth = false;
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+            else
+            {
+                grandmaNotesStory.SetActive(true);
+                grandmaNotesStoryTruth = true;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }        }
+        
+
+        // User Story 8
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (generalActionsTruth == true)
+            {
+                generalActions.SetActive(false);
+                generalActionsTruth = false;
+            }
+            else
+            {
+                generalActions.SetActive(true);
+                generalActionsTruth = true;
+            }
+
+
+            // Pausing the game
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+        }
+        
+        // User Story 2
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (inventoryTruth == true)
@@ -156,6 +221,7 @@ public class GameManager : MonoBehaviour
             }
         }
         
+        // User Story 5
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (pauseMenuTruth == true)
@@ -185,10 +251,17 @@ public class GameManager : MonoBehaviour
             }
         }
         
-        if (egg == 1 && flowers == 4 && mushroom == 4 && milk == 1)
+        // User Story 6
+        if (egg >= 1 && flowers >= 25 && mushroom >= 15 && milk >= 3)
         {
             victory = true;
-            
+            EndGame();
+        }
+
+        if (minutes >= 5)
+        {
+            victory = false;
+            EndGame();
         }
     }
 }

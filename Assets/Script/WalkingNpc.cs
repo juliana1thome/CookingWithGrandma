@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 
 public class WalkingNpc : MonoBehaviour
 {
+    
     /// <summary>
     /// Idea: the npc will walk until it get in the WalkingDestination
     /// and after he got in 1 walking destination he will move to the next one
