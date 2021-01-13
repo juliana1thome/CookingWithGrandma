@@ -1,6 +1,8 @@
 # CookingWithGrandma
 Final Assignment of GameEngine
 
+Playthrough video: https://www.youtube.com/watch?v=F_-P14Qz2ME&t=589s
+
 #User Story 1
 As a player, I want a terrain with space to constrain. So, I can know where I can play.
 - [x] Create the terrain.
