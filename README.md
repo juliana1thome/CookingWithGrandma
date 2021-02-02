@@ -73,43 +73,68 @@ As a player, I want the game to have a story. So, I will feel more connected to 
 - [x] Add load scene.
 - [x] Add more light.
 
-Credits:
+# Credits:
 
-Packages :
+## Packages :
 input system
+
 terrain tools
+
 2D Sprite
+
 SimpleSky --> Sky prefabs
+
 Stylized Grass Texture --> terrain paint
+
 Stylize Rock Texture --> terrain paint
+
 Stylized Terrain Texture  --> terrain paint
+
 RPG Poly Pack - Lite --> terrain prefabs
+
 Polygonal Foliage Asset Package --> terrain prefabs
+
 Low Poly Nature Assets Sample --> terrain prefabs
+
 Standard Assets (for Unity 2018.4)
+
 Lowpoly Medieval Peasants - Free pack
+
 Water Effect Fits For Lowpoly Style --> Water prefab
+
 Simple Low Poly Nature Pack --> terrain prefabs
+
 Low Poly Fence Pack --> fence prefabs
+
 Simplistic Low Poly Nature --> terrain prefabs
+
 Fantasy RPG Cursor Pack --> cursor and crossair
+
 Villager Animations Pack FREE --> animations / prefabs that npc are interecting
+
 Basic Motions FREE Pack --> animations
+
 Everyday Motion Pack Free --> animations
+
 Main Menu with Parallax Effect FREE --> main menu Backgroud Assets
+
 RPG inventory icons --> Pause menu icons and Inventory icons
+
 Food Icons Pack --> Game icons
+
 Low Poly Arsenal - Copper --> Bow and arrow asset
+
 Ultimate Low Poly Dungeon --> Decoration prefab
+
 3LE Low Poly Cloud Pack --> Decoration prefab
 
-Links:
+## Links:
 
 Music used: 
 Relax by Derek Clegg--> https://creativecommons.org/licenses/by-nc-sa/4.0/
 RainForest Sound --> http://soundbible.com/1818-Rainforest-Ambience.html 
 
-Script:
+## Script:
 User Story 1--> RigidbodyFirstPersonController Script --> Credit: Standart Asset
 
 User Story 1--> AvoidWater Script --> Credit: Marc-André Larouche
