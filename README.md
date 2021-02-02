@@ -111,9 +111,15 @@ RainForest Sound --> http://soundbible.com/1818-Rainforest-Ambience.html
 
 Script:
 User Story 1--> RigidbodyFirstPersonController Script --> Credit: Standart Asset
+
 User Story 1--> AvoidWater Script --> Credit: Marc-André Larouche
+
 User Story 4--> Main Menu Script part PanelToggle  --> Credit: Marc-André Larouche
+
 User Story 4--> Loading Scene Code --> Credit: Marc-André Larouche
+
 User Story 4--> Script SetGFX--> Credit: Marc-André Larouche
+
 User Story 4--> Script SetResolution --> Credit: Marc-André Larouche
+
 User Story 7--> Bow Firing Logic And Code --> Credit: Marc-André Larouche
